@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/landon/git/Boolean/src/main/scala/Boolean.scala:18:16: non-variable type argument Meet[Any] in type pattern (Meet[Any], Meet[Any]) is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m        case m:(Meet[Any],Meet[Any]) => m._1.gset.zip(m._2.gset).foldLeft(f(m._1.gset.zip(m._2.gset).head._1,m._1.gset.zip(m._2.gset).head._2))( (acc,curr) => (acc && f(curr._1,curr._2)))[0m
+[0m[[0m[33mwarn[0m] [0m[0m               ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

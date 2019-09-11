@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/landon/git/Boolean/target/scala-2.11/boolean_2.11-0.0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Join$$anonfun$equals$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Join$$anonfun$equals$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Join$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Join$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Meet$$anonfun$Meet$$f$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Meet$$anonfun$Meet$$f$1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Join$$anonfun$flatMap$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Join$$anonfun$flatMap$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BooleanOP.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/BooleanOP.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Meet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Meet$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Join.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Join.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Meet$$anonfun$flatMap$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Meet$$anonfun$flatMap$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Meet.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/landon/git/Boolean/target/scala-2.11/classes/Meet.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
