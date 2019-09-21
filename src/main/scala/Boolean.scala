@@ -1,22 +1,39 @@
 abstract class BooleanOP[A] {
   val gset:Set[A]
 }
-class Meet[A](s:A*) extends BooleanOP[A] {
+class OtherType[A]
+
+case class Meet[A](s:A*) extends BooleanOP[A] {
 
 
   val gset: Set[A] = Set(s:_*)
   def ++(elemSet:Meet[A]) = new Meet[A](s.++:(elemSet.gset) :_*)
   //def ==[B](m:Meet[B]) = {gset==m.gset}
+  //override
   override def equals(m:Any): Boolean = {
+    m match {
+      case m: Meet[_] => this.equalTo(m)
+      case _ => false
+    }
+  }
+  def ==(m:Meet[_]) = equalTo(m)
+  def equalTo(m:Meet[_]): Boolean = {
 
       //define recursive f to objectively produce
       //equality then call f inside fold left
-      def f(x:Any,y:Any): Boolean = {
+      def f(x:Meet[_],y:Meet[_]): Boolean = {
         println("rec")
         println(x.toString + " " +y.toString)
+      //   (x,y) match {
+      //   case (Meet(Meet(_*),_*),Meet(Meet(_*),_*)) => x.gset.zip(y.gset).foldLeft(f(x.gset.zip(y.gset).head._1,x.gset.zip(y.gset).head._2))( (acc,curr) => (acc && f(curr._1,curr._2)))
+      //
+      //   case _ => x == y
+      // }
+        println(x.gset.head.toString)
+        println(y.gset.head.toString)
         (x,y) match {
-        case m:(Meet[Any],Meet[Any]) => m._1.gset.zip(m._2.gset).foldLeft(f(m._1.gset.zip(m._2.gset).head._1,m._1.gset.zip(m._2.gset).head._2))( (acc,curr) => (acc && f(curr._1,curr._2)))
-
+        case (Meet(Meet(_*),_*),Meet(Meet(_*),_*)) => x.gset.head.equals(y.gset.head) && f(Meet(x.gset.tail.toSeq:_*),Meet(y.gset.tail.toSeq:_*));
+        case (Meet(_*),Meet(_*)) => x.gset == y.gset
         case _ => x == y
       }
 
@@ -32,9 +49,9 @@ class Meet[A](s:A*) extends BooleanOP[A] {
 
 }
 
-object Meet {
-  def apply[A](s:A*): Meet[A] = new Meet[A](Set(s:_*).toSeq:_*)
-}
+// object Meet {
+//   def apply[A](s:A*): Meet[A] = new Meet[A](Set(s:_*).toSeq:_*)
+// }
 
 class Join[A](s:A*) extends BooleanOP[A] {
 
